@@ -1,5 +1,4 @@
 <?php
-
 if( ! class_exists( 'Fusion_Slider' ) ) {
 	class Fusion_Slider {
 
