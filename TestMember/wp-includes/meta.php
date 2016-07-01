@@ -243,7 +243,12 @@ function update_metadata($meta_type, $object_id, $meta_key, $meta_value, $prev_v
 			do_action( 'update_postmeta', $meta_id, $object_id, $meta_key, $meta_value );
 		}
 	}
-
+//echo $table."<br>";
+//print_r($data);
+//echo "<br>";
+//print_r($where);
+//echo "<br>";
+//exit;
 	$result = $wpdb->update( $table, $data, $where );
 	if ( ! $result )
 		return false;

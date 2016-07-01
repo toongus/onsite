@@ -97,7 +97,7 @@ img.emoji {
 <meta name="msapplication-TileImage" content="http://localhost/testmember/wp-content/uploads/2016/05/cropped-MyLogo57-270x270.png" />
 </head>
 
-<body class="blog logged-in admin-bar  customize-support js">
+<body class="page page-id-114 page-template-default logged-in admin-bar no-customize-support">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
@@ -158,8 +158,7 @@ img.emoji {
 	</header><!-- #masthead -->
 	
 	<div id="content" class="site-content sidebar-right">
-		<div class="inner clearfix">
-	<div id="primary" class="content-area content-masonry">
+		<div class="inner clearfix">	<div id="primary" class="content-area content-masonry">
 		<main id="main" class="site-main" role="main">
 			<div id="masonry-container">
 				<div class="masonry" class="clearfix"><article id="post-121" class="item has-post-thumbnail post-121 post type-post status-publish format-standard hentry category-sale">
@@ -187,24 +186,6 @@ img.emoji {
 	</div>
 			<span class="edit-link"><a class="post-edit-link" href="http://localhost/testmember/wp-admin/post.php?post=121&#038;action=edit"><i class="fa fa-pencil-square-o"></i></a></span>	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
-
-<section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title">Nothing Found</h1>
-	</header><!-- .page-header -->
-
-	<div class="page-content">
-		
-			<p>It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.</p>
-			<form role="search" method="get" class="search-form" action="http://localhost/testmember/">
-				<label>
-					<span class="screen-reader-text">Search for:</span>
-					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
-				</label>
-				<input type="submit" class="search-submit" value="Search" />
-			</form>
-			</div><!-- .page-content -->
-</section><!-- .no-results -->
 				</div>
 			</div>
 			<div class="infinite-scroll clearfix">

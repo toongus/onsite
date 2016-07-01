@@ -27,22 +27,22 @@ if ( ! function_exists('pingraphy_header_title') ) :
 						</a>
 					</h2>
 				<?php endif ?>
-			<?php else : ?>
-				<?php if( is_front_page() || is_home() ) : ?>
+			<?php else :  ?>			
+				<?php  if( is_front_page() || is_home() ) { ?>
 					<h1 itemprop="headline" class="site-title">
 						<a itemprop="url" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo esc_attr(get_bloginfo( 'description' )); ?>">
-							<?php bloginfo( 'name' ); ?>
+							<?php bloginfo( 'name' ); ?> [Tong #1]
 						</a>
 					</h1>
 					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-					<?php else : ?>
-						<h2 class="site-title">
+				<?php } else { ?>
+					<h2 class="site-title">
 						<a itemprop="url" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo esc_attr(get_bloginfo( 'description' )); ?>">
-							<?php bloginfo( 'name' ); ?>
+							<?php bloginfo( 'name' ); ?> [Tong #2]
 						</a>
-						</h2>
-						<h3 class="site-description"><?php bloginfo( 'description' ); ?></h3>
-					<?php endif ?>
+					</h2>
+					<h3 class="site-description"><?php bloginfo( 'description' ); ?></h3>
+				<?php } ?>
 			<?php endif ?>
 		<?php
 	}

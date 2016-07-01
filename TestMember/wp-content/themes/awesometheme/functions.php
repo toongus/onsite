@@ -66,3 +66,28 @@ function awesome_widget_setup(){
 
 add_action('widgets_init','awesome_widget_setup');
 
+/*
+  [5]=>
+  array(7) {
+    [0]=>
+    string(5) "Posts"
+    [1]=>
+    string(10) "edit_posts"
+    [2]=>
+    string(8) "edit.php"
+    [3]=>
+    string(0) ""
+    [4]=>
+    string(37) "menu-top menu-icon-post open-if-no-js"
+    [5]=>
+    string(10) "menu-posts"
+    [6]=>
+    string(20) "dashicons-admin-post"
+  }
+ * */
+function dwwp_alter_pages_icon(){
+	global $menu;
+	$menu[5][6] = 'dashicons-smiley';	
+}
+add_filter('admin_menu','dwwp_alter_pages_icon');
+
