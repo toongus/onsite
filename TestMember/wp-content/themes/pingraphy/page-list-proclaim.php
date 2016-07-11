@@ -1,3 +1,8 @@
 <?php get_header(); ?>
-List advertise!
+<pre>
+	List advertise!
+	<br>
+	ทดสอบภาษาไทย
+</pre>
+
 <?php get_footer(); ?>

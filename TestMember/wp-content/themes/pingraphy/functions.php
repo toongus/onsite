@@ -88,6 +88,8 @@ function pingraphy_setup() {
 	// This theme styles the visual editor to resemble the theme style.
 	$google_font_url = str_replace( ',', '%2C', '//fonts.googleapis.com/css?family=Fira+Sans:700,400|Roboto:700,400' );
 	add_editor_style( array( 'css/editor-style.css', $google_font_url ) );
+	
+	
 }
 endif; // pingraphy_setup
 add_action( 'after_setup_theme', 'pingraphy_setup' );
@@ -159,7 +161,7 @@ add_action( 'widgets_init', 'pingraphy_widgets_init' );
 function pingraphy_scripts() {
 		wp_enqueue_style( 'pingraphy-google-font-style', '//fonts.googleapis.com/css?family=Fira+Sans:700,400|Roboto:700,400');
 
-	wp_enqueue_style( 'font-awesome', get_template_directory_uri() .  '/css/font-awesome.min.css');
+	wp_enqueue_style( 'font-awesome', get_template_directory_uri() .  '/css/font-awesome.css');
 	wp_enqueue_style( 'pingraphy-style', get_stylesheet_uri() );
 
 	wp_enqueue_style( 'pingraphy-responsive-style', get_template_directory_uri() .  '/css/responsive.css');

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div cllass="row">
+<div class="row">
 		<?php 
 			$args = array(
 					'type'=>'post',
@@ -16,7 +16,7 @@
 			wp_reset_postdata();
 		?>
 </div>
-<div cllass="row">
+<div class="row">
 	<div class="col-xs-12 col-sm-8">
 		<?php 		
 		if( have_posts() ):

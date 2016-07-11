@@ -212,7 +212,7 @@ img.emoji {
 						<div class="site-info">
 			<div class="inner clearfix">
 				
-									@Test by Tong						
+									@Powered by Neural Solutions						
 								<div class="menu-footer">
 					<div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu clearfix"><li id="menu-item-117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-117"><a href="http://localhost/testmember/about-me/">About Us</a></li>
 <li id="menu-item-118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118"><a href="http://localhost/testmember/contact/">Contact Us</a></li>

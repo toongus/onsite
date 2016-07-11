@@ -4,7 +4,7 @@ function dwwp_add_custom_metabox(){
 	
 	add_meta_box(
 			'dwwp_meta',
-			'Job Listing',
+			__( 'Job Listing'),
 			'dwwp_meta_callback',
 			'job',
 			'normal',
@@ -29,7 +29,7 @@ function dwwp_meta_callback($post){
 	<div>
 		<div class="meta-row">
 			<div class="meta-th">
-				<label for="job-id" class="dwwp-row-title">Job ID</label>
+				<label for="job-id" class="dwwp-row-title"><?php _e('Job ID','wp-job-listing');?></label>
 			</div>
 			<div class="meta-td">
 				<input type="text" class="dwwp-row-content" name="job_id" id="job_id" value="<?=$job_id?>">

@@ -1,6 +1,6 @@
 <?php
 
-function  dwwp_add_submenu_page(){
+function  dwwp_add_submenu_page(){	
 	add_submenu_page(
 			'edit.php?post_type=job',
 			'Reorder Jobs',
@@ -14,6 +14,7 @@ add_action('admin_menu', 'dwwp_add_submenu_page');
 
 
 function reorder_admin_jobs_callback(){
+	
 	$args = array(
 			//'post_type' => 'job',
 			//'orderby' 	=> 'menu_order',
@@ -21,7 +22,7 @@ function reorder_admin_jobs_callback(){
 			//'no_found_rows'	=> true,
 			//'update_post_term_cache' => false,
 			//'post_per_post'	=> 50
-			'category_name' => 'Toturial'
+			'category_name' => 'main-categories'
 		);
 	$job_listing = new WP_Query($args);
 	?>
