@@ -14,6 +14,20 @@ function wpcf7_control_init() {
 	}
 
 	if ( 'POST' == $_SERVER['REQUEST_METHOD'] ) {
+		/*
+		echo "[TONG >>> SAVE FORM]";
+		echo "<pre>";
+		print_r($_POST);
+		echo "</pre>";
+		exit;
+		*/
+		if (isset( $_POST['iputproname'] )){
+			echo "TONG >> hook 2";
+			echo "<pre>";
+			print_r($_POST);
+			echo "</pre>";
+			exit;			
+		}
 		if ( isset( $_POST['_wpcf7_is_ajax_call'] ) ) {
 			wpcf7_ajax_json_echo();
 		}
@@ -26,8 +40,7 @@ function wpcf7_ajax_onload() {
 	$echo = '';
 	$items = array();
 
-	if ( isset( $_GET['_wpcf7'] )
-	&& $contact_form = wpcf7_contact_form( (int) $_GET['_wpcf7'] ) ) {
+	if ( isset( $_GET['_wpcf7'] ) && $contact_form = wpcf7_contact_form( (int) $_GET['_wpcf7'] ) ) {
 		$items = apply_filters( 'wpcf7_ajax_onload', $items );
 	}
 
@@ -69,8 +82,7 @@ function wpcf7_ajax_json_echo() {
 
 				foreach ( $result['invalid_fields'] as $name => $field ) {
 					$invalids[] = array(
-						'into' => 'span.wpcf7-form-control-wrap.'
-							. sanitize_html_class( $name ),
+						'into' => 'span.wpcf7-form-control-wrap.' . sanitize_html_class( $name ),
 						'message' => $field['reason'],
 						'idref' => $field['idref'] );
 				}
