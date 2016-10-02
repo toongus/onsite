@@ -13,20 +13,10 @@ function wpcf7_control_init() {
 		}
 	}
 
-	if ( 'POST' == $_SERVER['REQUEST_METHOD'] ) {
-		/*
-		echo "[TONG >>> SAVE FORM]";
-		echo "<pre>";
-		print_r($_POST);
-		echo "</pre>";
-		exit;
-		*/
-		if (isset( $_POST['iputproname'] )){
-			echo "TONG >> hook 2";
-			echo "<pre>";
-			print_r($_POST);
-			echo "</pre>";
-			exit;			
+	if ( 'POST' == $_SERVER['REQUEST_METHOD']) {
+		
+		if (isset( $_POST['frmTokenId'] )){			
+			proc_ajax_json_echo();
 		}
 		if ( isset( $_POST['_wpcf7_is_ajax_call'] ) ) {
 			wpcf7_ajax_json_echo();

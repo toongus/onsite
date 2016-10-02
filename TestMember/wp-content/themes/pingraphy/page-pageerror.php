@@ -235,11 +235,6 @@ var _wpcf7 = {"loaderUrl":"http:\/\/localhost\/testmember\/wp-content\/plugins\/
 <script type='text/javascript' src='http://localhost/testmember/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2'></script>
 <script type='text/javascript' src='http://localhost/testmember/wp-content/themes/pingraphy/js/isotope.pkgd.min.js?ver=20160115'></script>
 <script type='text/javascript' src='http://localhost/testmember/wp-content/themes/pingraphy/js/imagesloaded.pkgd.min.js?ver=20160115'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var AdminAjaxURL = {"ajaxurl":"http:\/\/localhost\/testmember\/wp-admin\/admin-ajax.php"};
-/* ]]> */
-</script>
 <script type='text/javascript' src='http://localhost/testmember/wp-content/themes/pingraphy/js/script.js?ver=20160115'></script>
 <script type='text/javascript' src='http://localhost/testmember/wp-content/themes/pingraphy/js/skip-link-focus-fix.js?ver=20160115'></script>
 <script type='text/javascript' src='http://localhost/testmember/wp-includes/js/wp-embed.min.js?ver=4.5.2'></script>

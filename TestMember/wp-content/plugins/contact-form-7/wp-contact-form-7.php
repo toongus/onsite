@@ -64,3 +64,9 @@ if ( ! defined( 'WPCF7_VALIDATE_CONFIGURATION' ) ) {
 define( 'WPCF7_PLUGIN_URL', untrailingslashit( plugins_url( '', WPCF7_PLUGIN ) ) );
 
 require_once WPCF7_PLUGIN_DIR . '/settings.php';
+
+define('PROC_PLUGIN',str_replace(WPCF7_PLUGIN_NAME, "proclaim" , WPCF7_PLUGIN_DIR));
+require_once PROC_PLUGIN . '/proclaim-mgr.php';
+require_once PROC_PLUGIN . '/inc/mcontroller.php';
+
+

@@ -5,6 +5,7 @@ $options = get_option( APSL_SETTINGS );
 $redirect_to = isset( $_REQUEST['redirect_to'] ) ? $_REQUEST['redirect_to'] : '';
 
 $encoded_url = urlencode( $redirect_to );
+
 ?>
 <div class='apsl-login-networks theme-<?php echo $options['apsl_icon_theme']; ?> clearfix'>
     <span class='apsl-login-new-text'><?php echo $options['apsl_title_text_field']; ?></span>

@@ -50,6 +50,7 @@ class Theme_My_Login_MS_Signup extends Theme_My_Login_Abstract {
 		add_filter( 'network_site_url', array( $this, 'network_site_url' ), 10, 3 );
 		add_filter( 'network_home_url', array( $this, 'network_site_url' ), 10, 3 );
 		add_filter( 'clean_url',        array( $this, 'clean_url'        ), 10, 3 );
+
 	}
 
 	/**

@@ -275,8 +275,9 @@ function pingraphy_footer_post_meta() {
 			
 			<?php
 				if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-					echo '<span class="comments-link"><i class="fa fa-comment"></i> ';
-					comments_popup_link( esc_html__( '0', 'pingraphy' ), esc_html__( '1', 'pingraphy' ), esc_html__( '%', 'pingraphy' ) );
+					echo '<span class="comments-link">... ';
+					//echo '<span class="comments-link"><i class="fa fa-comment">...</i> ';
+					//comments_popup_link( esc_html__( '0', 'pingraphy' ), esc_html__( '1', 'pingraphy' ), esc_html__( '%', 'pingraphy' ) );
 					echo '</span>';
 				}
 			?>

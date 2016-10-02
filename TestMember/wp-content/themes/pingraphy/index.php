@@ -1,4 +1,5 @@
-<?php get_header(); ?>
+<?php
+get_header(); ?>
 	<div id="primary" class="content-area content-masonry">
 		<main id="main" class="site-main" role="main">
 			<div id="masonry-container">

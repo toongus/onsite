@@ -28,12 +28,14 @@ if ( ! function_exists('pingraphy_header_title') ) :
 					</h2>
 				<?php endif ?>
 			<?php else :  ?>			
-				<?php  if( is_front_page() || is_home() ) { ?>
+				<?php  //if( is_front_page() || is_home() ) {
+						if( 1==5 ) {//force to false, Tkky 2016-09-04
+				?>
 					<h1 itemprop="headline" class="site-title">
 						<a itemprop="url" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo esc_attr(get_bloginfo( 'description' )); ?>">
 							<?php bloginfo( 'name' ); ?> [Tong #1]
 						</a>
-					</h1>
+					</1>
 					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 				<?php } else { ?>
 					<h2 class="site-title">
