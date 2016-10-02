@@ -624,6 +624,7 @@ function wp_get_nav_menu_items( $menu, $args = array() ) {
 	static $fetched = array();
 
 	$items = get_objects_in_term( $menu->term_id, 'nav_menu' );
+		
 	if ( is_wp_error( $items ) ) {
 		return false;
 	}
@@ -674,11 +675,11 @@ function wp_get_nav_menu_items( $menu, $args = array() ) {
 	}
 
 	$items = array_map( 'wp_setup_nav_menu_item', $items );
-
+	
 	if ( ! is_admin() ) { // Remove invalid items only in front end
 		$items = array_filter( $items, '_is_valid_nav_menu_item' );
 	}
-
+	
 	if ( ARRAY_A == $args['output'] ) {
 		$GLOBALS['_menu_item_sort_prop'] = $args['output_key'];
 		usort($items, '_sort_nav_menu_items');

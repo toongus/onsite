@@ -285,6 +285,7 @@ function wp_nav_menu( $args = array() ) {
 	 */
 	$nav_menu = apply_filters( 'pre_wp_nav_menu', null, $args );
 
+
 	if ( null !== $nav_menu ) {
 		if ( $args->echo ) {
 			echo $nav_menu;
@@ -297,10 +298,11 @@ function wp_nav_menu( $args = array() ) {
 	// Get the nav menu based on the requested menu
 	$menu = wp_get_nav_menu_object( $args->menu );
 
+	
 	// Get the nav menu based on the theme_location
 	if ( ! $menu && $args->theme_location && ( $locations = get_nav_menu_locations() ) && isset( $locations[ $args->theme_location ] ) )
 		$menu = wp_get_nav_menu_object( $locations[ $args->theme_location ] );
-
+	
 	// get the first menu that has items if we still can't find a menu
 	if ( ! $menu && !$args->theme_location ) {
 		$menus = wp_get_nav_menus();
@@ -312,14 +314,16 @@ function wp_nav_menu( $args = array() ) {
 		}
 	}
 
+	
 	if ( empty( $args->menu ) ) {
 		$args->menu = $menu;
 	}
 
 	// If the menu exists, get its items.
-	if ( $menu && ! is_wp_error($menu) && !isset($menu_items) )
+	if ( $menu && ! is_wp_error($menu) && !isset($menu_items) ){
 		$menu_items = wp_get_nav_menu_items( $menu->term_id, array( 'update_post_term_cache' => false ) );
-
+	}
+	
 	/*
 	 * If no menu was found:
 	 *  - Fall back (if one was specified), or bail.

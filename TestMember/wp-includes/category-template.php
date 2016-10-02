@@ -588,7 +588,7 @@ function wp_list_categories( $args = '' ) {
 		$output = '<li class="' . esc_attr( $r['class'] ) . '">' . $r['title_li'] . '<ul>';
 	}
 	if ( empty( $categories ) ) {
-		if ( ! empty( $show_option_none ) ) {
+		if ( ! empty( $show_option_none ) ) {			
 			if ( 'list' == $r['style'] ) {
 				$output .= '<li class="cat-item-none">' . $show_option_none . '</li>';
 			} else {
@@ -627,7 +627,7 @@ function wp_list_categories( $args = '' ) {
 			if ( 'list' == $r['style'] ) {
 				$output .= "<li class='cat-item-all'><a href='$posts_page'>$show_option_all</a></li>";
 			} else {
-				$output .= "<a href='$posts_page'>$show_option_all</a>";
+				$output .= "<a href='$posts_page'>$show_option_all</a>";				
 			}
 		}
 
@@ -639,10 +639,11 @@ function wp_list_categories( $args = '' ) {
 		}
 
 		if ( $r['hierarchical'] ) {
-			$depth = $r['depth'];
+			$depth = $r['depth'];			
 		} else {
-			$depth = -1; // Flat.
+			$depth = -1; // Flat.	
 		}
+
 		$output .= walk_category_tree( $categories, $depth, $r );
 	}
 
